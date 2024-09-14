@@ -61,12 +61,9 @@ function App() {
   return (
     <div className="app">
       <div className="sidebar">
-        <FriendsList friends={friends}>
-          <Friend
-            selectedFriend={selectedFriend}
-            toggleSelectedFriend={toggleSelectedFriend}
-          />
-        </FriendsList>
+        <FriendsList friends={friends}
+          selectedFriend={selectedFriend}
+          toggleSelectedFriend={toggleSelectedFriend} />
 
         {showAddForm && <AddFriendForm addFriend={addFriend} />}
 
